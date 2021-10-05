@@ -1,0 +1,167 @@
+/* sitewide */
+body {
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00FF00;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.desktop-title {
+  text-align: center;
+  font-size: 60px;
+}
+
+.desktop-subtitle {
+  text-align: center;
+  font-size: 26px;
+}
+
+.carosel-img {
+  border-radius: 6px;
+  border: 2px solid #FFF;
+  width: 100%;
+}
+
+.weather-form-desktop {
+  color: #000;
+}
+
+.desktop-social-media {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* error.ejs */
+.error-img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* result.ejs */
+.desktop-result-title {
+  text-align: center;
+  font-size: 50px;
+}
+
+.desktop-result {
+  text-align: center;
+}
+
+.result-weather-icon {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  /* Site-wide CSS */
+  .mobile-small-title {
+    font-size: 30px;
+  }
+
+  .mobile-small-subtitle {
+    font-size: 18px;
+  }
+
+  .mobile-col {
+    margin: auto;
+    height: 50%;
+  }
+
+  .mobile-small-social-media {
+    font-size: 14px;
+  }
+
+  /* result.ejs */
+  .mobile-small-result-title {
+    font-size: 30px;
+  }
+
+  .mobile-small-result {
+    font-size: 20px;
+  }
+
+  .result-weather-icon {
+    width: 50%;
+  }
+}
+
+/* @media screen and (orientation: portrait) and (min-width: 481px) and (max-width: 768px) {
+
+} */
+
+@media screen and (orientation: landscape) and (min-width: 481px) and (max-width: 768px) {
+  /* Site-wide CSS */
+  .mobile-small-title {
+    font-size: 40px;
+  }
+
+  .mobile-small-subtitle {
+    font-size: 20px;
+  }
+
+  .mobile-col {
+    margin: auto;
+    height: 50%;
+  }
+
+  .mobile-container {
+    margin-top: 50px;
+  }
+
+  .mobile-small-social-media {
+    position: relative;
+    font-size: 14px;
+  }
+
+  /* result.ejs */
+  .mobile-small-result-title {
+    font-size: 30px;
+  }
+
+  .mobile-small-result {
+    font-size: 22px;
+  }
+
+  .result-weather-icon {
+    width: 50%;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 769px) and (max-width: 1024px) {
+  /* Site-wide CSS */
+  .mobile-col {
+    height: 100%;
+  }
+
+  .mobile-container {
+    margin-top: 75px;
+  }
+
+  .mobile-small-social-media {
+    position: relative;
+    font-size: 16px;
+  }
+
+  .result-weather-icon {
+    width: 30%;
+  }
+}
