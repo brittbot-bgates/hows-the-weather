@@ -1,40 +1,40 @@
 /* sitewide */
 body {
-  background-color: #000;
+  background-image: url(../img/bg.jpg);
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
 }
 
 a {
-  color: #FFD700;
+  color: #000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #00FF00;
+  color: #2F4F4F;
 }
 
-.row {
-  margin-top: 50px;
-}
-
+/* index.ejs*/
 .desktop-title {
+  margin-top: 50px;
   text-align: center;
   font-size: 60px;
 }
 
 .desktop-subtitle {
+  margin-top: 25px;
   text-align: center;
   font-size: 26px;
 }
 
-.carosel-img {
-  border-radius: 6px;
-  border: 2px solid #FFF;
-  width: 100%;
+.index-col {
+  text-align: center;
 }
 
 .weather-form-desktop {
+  margin-top: 25px;
+  width: 50%;
+  display: inline-block;
   color: #000;
 }
 
@@ -43,6 +43,7 @@ a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
+  color: #2F4F4F;
   font-size: 18px;
   text-align: center;
 }
@@ -56,60 +57,102 @@ a:hover {
 
 /* result.ejs */
 .desktop-result-title {
+  margin-top: 50px;
   text-align: center;
   font-size: 50px;
 }
 
-.desktop-result {
+.result-row {
   text-align: center;
 }
 
-.result-weather-icon {
-  width: 25%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.desktop-result {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.desktop-result-button {
+  width: 50%;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 480px) {
-  /* Site-wide CSS */
+
+  /* index.ejs */
   .mobile-small-title {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .mobile-small-subtitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .mobile-col {
-    margin: auto;
-    height: 50%;
+  .weather-form-mobile {
+    margin-top: 20px;
+    width: 75%;
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+  }
+
+  .btn-primary {
+    font-size: 14px;
   }
 
   .mobile-small-social-media {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   /* result.ejs */
   .mobile-small-result-title {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .mobile-small-result {
-    font-size: 20px;
-  }
-
-  .result-weather-icon {
-    width: 50%;
+    font-size: 18px;
   }
 }
 
-/* @media screen and (orientation: portrait) and (min-width: 481px) and (max-width: 768px) {
+@media screen and (orientation: portrait) and (min-width: 481px) and (max-width: 768px) {
 
-} */
+  /* index.ejs */
+  .mobile-small-title {
+    font-size: 32px;
+  }
+
+  .mobile-small-subtitle {
+    font-size: 24px;
+  }
+
+  .weather-form-mobile {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+  }
+
+  .mobile-small-social-media {
+    font-size: 16px;
+  }
+
+  /* result.ejs */
+  .mobile-small-result-title {
+    font-size: 32px;
+  }
+
+  .mobile-small-result {
+    font-size: 26px;
+  }
+}
 
 @media screen and (orientation: landscape) and (min-width: 481px) and (max-width: 768px) {
-  /* Site-wide CSS */
+
+  /* index.ejs */
   .mobile-small-title {
     font-size: 40px;
   }
@@ -118,50 +161,43 @@ a:hover {
     font-size: 20px;
   }
 
-  .mobile-col {
-    margin: auto;
-    height: 50%;
+  .weather-form-mobile {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    color: #000;
   }
 
-  .mobile-container {
-    margin-top: 50px;
+  .btn-primary {
+    font-size: 16px;
   }
 
   .mobile-small-social-media {
-    position: relative;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* result.ejs */
   .mobile-small-result-title {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .mobile-small-result {
-    font-size: 22px;
-  }
-
-  .result-weather-icon {
-    width: 50%;
+    font-size: 28px;
   }
 }
 
 @media screen and (orientation: landscape) and (min-width: 769px) and (max-width: 1024px) {
-  /* Site-wide CSS */
-  .mobile-col {
-    height: 100%;
-  }
 
-  .mobile-container {
-    margin-top: 75px;
+  /* index.ejs */
+  .weather-form-mobile {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    color: #000;
   }
 
   .mobile-small-social-media {
-    position: relative;
     font-size: 16px;
-  }
-
-  .result-weather-icon {
-    width: 30%;
   }
 }
