@@ -1,11 +1,17 @@
 <%- include("partials/result_header") -%>
 
-<h1 class="desktop-result-title mobile-small-result-title">How's The Weather In <%= city %>, <%= state %>?</h1>
-<div class="row">
-  <h2 class="desktop-result mobile-small-result">Temperature: <%= temp %>F with <%= humidity %>% humidity</h2>
-  <h2 class="desktop-result mobile-small-result">Weather: <%= desc %></h2>
-  <h2 class="desktop-result mobile-small-result">Wind Speed: <%= wind %> MPH</h2>
-  <img class="result-weather-icon" src="<%= icon %>" alt="Weather icon">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="desktop-result-title mobile-small-result-title">How's The Weather In <%= city %>, <%= state %>?</h1>
+      <div class="row result-row">
+        <h2 class="desktop-result mobile-small-result">Temperature: <%= temp %>F with <%= humidity %>% humidity</h2>
+        <h2 class="desktop-result mobile-small-result">Weather: <%= desc %></h2>
+        <h2 class="desktop-result mobile-small-result">Wind Speed: <%= wind %> MPH</h2>
+        <a href="/"><button class="btn btn-primary desktop-result-button mobile-result-button" type="submit">Check The Weather Again</button></a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <%- include("partials/footer") -%>
