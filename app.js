@@ -29,8 +29,6 @@ app.post("/result", (req, res) => {
       const desc = weatherData.weather[0].description;
       const humidity = weatherData.main.humidity;
       const wind = weatherData.wind.speed;
-      const icon = weatherData.weather[0].icon;
-      const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
       res.render("result", {
         city: city.charAt(0).toUpperCase() + city.slice(1),
         state: state.charAt(3).toUpperCase() + state.slice(4).toUpperCase(),
@@ -38,7 +36,6 @@ app.post("/result", (req, res) => {
         humidity: humidity,
         wind: wind.toFixed(),
         desc: desc.charAt(0).toUpperCase() + desc.slice(1),
-        icon: imageURL,
       })
     })
   })
